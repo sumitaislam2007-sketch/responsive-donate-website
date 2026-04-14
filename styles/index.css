@@ -8,9 +8,7 @@
     padding: 0;
  }
  /* Mixed style */
-.border{
-    /* border: 5px solid red; */
-}
+
 main section{
     margin-top: 130px;
 }
@@ -71,6 +69,15 @@ main section{
  #white{
     color: #FFFFFF;
  }
+ .blue{
+    background-color: rgba(79, 157, 166, 0.1);
+ }
+ .orange{
+    background-color: rgba(255, 89, 89, 0.1);
+ }
+ .yellow{
+    background-color: rgba(255, 244, 214, 1);
+ }
 
 
  /* donate section */
@@ -84,23 +91,60 @@ main section{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 22px;
+    margin-bottom: 60px;
  }
  .amount{
-    background-color:  skyblue;
+    color: #707070;
     border: none;
     border-radius: 5px;
     font-weight: 700;
     font-size: 1.8rem;
-    color: #707070;
     padding: 40px 12px;
     display: flex;
     justify-content: center;
     align-items: center;
  }
- #orange{
+ .border{
     border: 2px solid #FF5959;
-    background-color: orange;
+}
+ /* #orange{
+    border: 2px solid #FF5959;
+    background-color:  #FF5959;
+ } */
+ .gray{
+    color: rgba(179, 179, 179, 1);
  }
+ .donate-section hr{
+    margin-top: 9.5px;
+    margin-bottom: 30px;
+ }
+ /* donation plans */
+ .plan-titles{
+    max-width: 760px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .plans-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .plan{
+    border: none;
+    border-radius: 5px;
+    padding: 60px 20px 50px 20px;
+ }
+ .plan img{
+    margin-bottom: 30px;
+ }
+ .small{
+    font-size: 1rem;
+ }
+
 
  /* Media query for small device */
  @media screen and (max-width: 576px) {
@@ -109,6 +153,12 @@ main section{
     }
     .donation-amounts{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .plans-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .plan{
+        text-align: center;
     }
  }
 
@@ -119,5 +169,8 @@ main section{
     }
     .donation-amounts{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .plans-container{
+        grid-template-columns: repeat(2, 1fr);
     }
  }
