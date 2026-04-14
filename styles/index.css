@@ -145,7 +145,7 @@ main section{
     font-size: 1rem;
  }
  /* contribute-section */
- .contribute-section{
+ .contribute-section, .contribute-section2{
     display: flex;
     max-width: 1100px;
     gap: 83px;
@@ -154,7 +154,8 @@ main section{
     justify-content: center;
     align-items: center;
  }
- .contribute-section div{
+ .contribute-section div,
+ .contribute-section2 div{
     width: 50%;
  }
  .contribute-image img{
@@ -183,7 +184,13 @@ main section{
         flex-direction: column;
         gap: 0px;
     }
-    .contribute-section div{
+    .contribute-section2{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+     
+    .contribute-section div,
+    .contribute-section2 div{
        width: 100%;
     }
     header, main{
@@ -206,7 +213,12 @@ main section{
         flex-direction: column;
         gap: 0px;
     }
-    .contribute-section div{
+    .contribute-section2{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .contribute-section div,
+    .contribute-section2 div{
        width: 100%;
     }
     header, main{
