@@ -3,6 +3,11 @@
  /* font-family: "Poppins", sans-serif; */
  /* font-family: "Roboto", sans-serif; */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: "Lobster", sans-serif; */
+
+
  *{
     margin: 0;
     padding: 0;
@@ -119,7 +124,7 @@ main section{
     margin-bottom: 30px;
  }
  /* donation plans */
- .plan-titles{
+ .titles{
     max-width: 760px;
     text-align: center;
     margin-left: auto;
@@ -164,7 +169,50 @@ main section{
     border: none;
     border-radius: 8px;
  }
-
+ /* update section */
+ .update-form{
+    /* margin: 50px auto 130px auto; */
+    /* padding: 76px 188px; */
+    height: 200px;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    /* border: none; */
+    /* border-radius: 5px;  */
+ }
+ form input{
+    max-width: 450px;
+    height: 55px;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+    outline: none;
+    border-radius:  5px 0 0 5px;
+    padding-left: 17px;
+ }
+ #collapse{
+     border-radius: 0 5px 5px 0;
+ }
+/* footer style */
+footer{
+   background-color: black;
+   height: 177px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.lobster{
+   font-family: "Lobster", sans-serif;
+   color: #FF5959;
+   font-size: 2.25rem;
+   margin-bottom: 24px;
+}
+footer p{
+   color: white;
+}
 
  /* Media query for small device */
  @media screen and (max-width: 576px) {
@@ -196,6 +244,10 @@ main section{
     header, main{
         margin-left: 10px;
     }
+    .update-form{
+      max-width: 500px;
+    }
+
  }
 
  /* Media for medium device */
